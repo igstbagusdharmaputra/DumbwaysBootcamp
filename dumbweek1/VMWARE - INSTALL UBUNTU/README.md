@@ -4,10 +4,15 @@
 ![1](./asset/1.png)
 2. Pilih iso sesuai lokasi file anda (ubuntu server 18.04)
 ![2](./asset/2.png)
+
 3. Setting account user pada sistem operasi
+
 ![3](./asset/3.png)
+
 4. Letakan lokasi install virtual machine atau vmdk pada directory anda
+
 ![4](./asset/4.png)
+
 5. Setting size harddisk (20 GB)
 ![5](./asset/5.png)
 6. Klik Finish
