@@ -38,17 +38,31 @@
 4. Pilih mirror address
 
 ![13](./asset/13.png) 
+
 5. Pilih Continue without updating
+
 ![14](./asset/14.png)
+
 6. Pilih Custom Storage Layout
+
 ![15](./asset/15.png)
+
 7. Settup partisi swap 4G sesuai dengan 2x jumlah memory (RAM)
+
 ![16](./asset/16.png)
+
 8. Settup partisi untuk system / dengan size 15.997G
+
 ![17](./asset/17.png)
+
 9. Pilih Done
+
 ![18](./asset/18.png)
+
 10. Setting profile account untuk sistem operasi ubuntu server
+
 ![19](./asset/19.png)
+
 11. Uncheck openssh-server dikarenakan proses install ssh dilakukan manual, tekan done
+
 ![20](./asset/20.png)
