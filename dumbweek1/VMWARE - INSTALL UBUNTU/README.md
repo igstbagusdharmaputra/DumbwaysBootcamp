@@ -66,3 +66,6 @@
 11. Uncheck openssh-server dikarenakan proses install ssh dilakukan manual, tekan done
 
 ![20](./asset/20.png)
+
+12. Proses Installasi selesai
+![21](./asset/22.png)
