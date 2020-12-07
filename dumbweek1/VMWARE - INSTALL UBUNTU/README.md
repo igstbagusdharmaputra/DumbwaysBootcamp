@@ -34,7 +34,9 @@
 ![11](./asset/11.png)
 3. setup proxy (kosongkan)
 ![12](./asset/12.png)
+
 4. Pilih mirror address
+
 ![13](./asset/13.png) 
 5. Pilih Continue without updating
 ![14](./asset/14.png)
