@@ -1,6 +1,7 @@
 # Instalasi Ubuntu Server 18.04 pada VMWare Workstation 15
 ## Setup pada VMWARE
 1. Membuat virtual machine baru dengan typical (recomended)
+![1](/asset/1.png)
 2. Pilih iso sesuai lokasi file anda (ubuntu server 18.04)
 3. Setting account user pada sistem operasi
 4. Letakan lokasi install virtual machine atau vmdk pada directory anda
