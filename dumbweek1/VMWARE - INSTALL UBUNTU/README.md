@@ -15,9 +15,13 @@
 ![4](./asset/4.png)
 
 5. Setting size harddisk (20 GB)
+
 ![5](./asset/5.png)
+
 6. Klik Finish
+
 ![6](./asset/6.png)
+
 7. Edit Virtual Machine Setting
 ![7](./asset/7.png)
 8. Remove CD/DVD dan Floppy autoinst (supaya tidak melakukan auto install)
