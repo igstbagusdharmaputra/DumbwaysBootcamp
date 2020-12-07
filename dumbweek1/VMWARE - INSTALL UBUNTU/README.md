@@ -1,0 +1,1 @@
+# Instalasi Ubuntu Server 18.04 pada VMWare
