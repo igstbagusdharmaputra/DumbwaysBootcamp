@@ -26,3 +26,14 @@
 7. Pengujian dengan melakukan Ping google.com
 
 ![7](./asset/7.png)
+
+# Konfigurasi IP Static Pada Server
+
+1. Edit file konfigurasi network pada directory  /etc/netplan dengan file format .yml
+
+![8](./asset/8.png)
+
+2. Restart Konfigurasi dan melihat ip address yang sudah di konfigurasi
+
+![9](./asset/9.png)
+
