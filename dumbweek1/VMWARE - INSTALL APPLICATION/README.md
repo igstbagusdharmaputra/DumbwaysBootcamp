@@ -30,14 +30,18 @@
 
 ![7](./asset/7.png)
 
-4. Masuk kedalam directory project aplikasi dan lakukan npm install pada file package.json untuk meinstall dependencies yang diperlukan
+4. Ubah project folder menjadi frontend
 
-![8](./asset/8.png)
+![11](./asset/11.png)
 
-5. Jalankan aplikasi dengan perintah npm start 
+5. Masuk kedalam directory project aplikasi dan lakukan npm install pada file package.json untuk meinstall dependencies yang diperlukan
 
-![9](./asset/9.png)
+![12](./asset/12.png)
 
-6. Lakukan pengujian pada browser dengan alamat ip address statik dan port 3000 (sesuai dengan aplikasi).
+6. Jalankan aplikasi dengan perintah npm start 
+
+![13](./asset/13.png)
+
+7. Lakukan pengujian pada browser dengan alamat ip address statik dan port 3000 (sesuai dengan aplikasi).
 
 ![10](./asset/10.png)
