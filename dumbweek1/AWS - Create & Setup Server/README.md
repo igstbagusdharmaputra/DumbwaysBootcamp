@@ -53,6 +53,10 @@ Route disini bertujuan untuk menghubungan jaringan yang berbeda yang dimana subn
 
 ![text](./asset/network/13.png)
 
+- Edit routing table pada public-route dan tambahkan dengan destination 0.0.0.0/0 atau internet dengan taget melalui internet gateway. Untuk private route dilakukan nanti pada tahap proses NAT Gateway.
+
+![text](./asset/network/10.png)
+
 ## Setup Instance Pada Server Public Untuk Reverse Proxy
 Instance ini bertujuan sebagai perantara untuk aplikasi yang berjalan pada server private, dimana server public ini terdapat reverse proxy untuk aplikasi.
 
@@ -60,6 +64,42 @@ Instance ini bertujuan sebagai perantara untuk aplikasi yang berjalan pada serve
 
 ![text](./asset/server-proxy/1.png)
 
+- Jenis instance yang akan digunakan untuk saat ini menggunakan type t2 micro dengan spesifikasi sesuai kebutuhan
+
+![text](./asset/server-proxy/2.png)
+
+- Konfigurasi Instance dengan network sesuai VPC yang sudah dibuat, subnet menggunakan subnet-public dan Auto-assign Public IP dilakukan Disable dikarenakan untuk server menggunakan ip static yang akan dikonfigurasi melalui elastic ip, tidak disarankan menggunakan ip dinamis karena dalam proses pengembangan akan merepokan jika terjadi perubahan ip pada server. 
+
+![text](./asset/server-proxy/3.png)
+
+- Storage pada Instance yang digunakan menggunakan 8 GB sesuai kebutuhan.
+
+![text](./asset/server-proxy/4.png)
+
+- Tambahkan tag untuk memberikan identitas pada instance
+
+![text](./asset/server-proxy/5.png)
+
+- Konfigurasi security group untuk memberikan layanan atau service apa saja yang bisa di akses, hal ini yang dibutuhkan adalah :
+    - SSH   : server bisa diakses melalui komputer atau jaringan public (Port 22)
+    - HTTP  : web dapat diakses secara public (Port 80)
+    - HTTPS : web dapat diakses secara Secure atau SSL (Port 443)
+
+![text](./asset/server-proxy/6.png)
+
+- Membuat keypair baru untuk login ke ssh server.
+
+![text](./asset/server-proxy/7.png)
+
+- Setelah proses installasi server selasi, maka langkah selanjutnya memberikan public ip static yang nantinya komputer atau host dapat mengakses server.
+
+![text](./asset/server-proxy/8.png)
+
+- Tambahkan elastic ip ke server public.
+
+![text](./asset/server-proxy/9.png)
+
+![text](./asset/server-proxy/10.png)
 
 
 ## Setup Instance Pada Server Private
