@@ -102,7 +102,20 @@ Instance ini bertujuan sebagai perantara untuk aplikasi yang berjalan pada serve
 ![text](./asset/server-proxy/10.png)
 
 
-## Setup Instance Pada Server Private
+## Setup Instance Pada Server Private Untuk Aplikasi 
+Pada Instance atau Server Private ini bertujuan untuk menjalankan aplikasi yang nantinya dapat diakses melalui jaringan public dengan perantara Proxy. Pada server private menggunakan ubuntu server 18.04 hal sama dilakukan pada saat membuat instance server public, namun yang membedakan adalah Configure instance dan Security Group.
+
+- Konfigurasi Instance dengan network menggunakan VPC yang sudah dibuat, subnet menggunakan subnet untuk server private dan Auto-assign Public IP disable, karena tidak memerlukan ip public pada private server.
+
+![text](./asset/server-private/1.png)
+
+- Konfigurasi security Group agar server public dapat menggunakan service dari server private.
+
+![text](./asset/server-private/3.png)
+
+- Menggunakan ssh key sebelumnya.
+
+![text](./asset/server-private/4.png)
 
 ## SSH Pada Server Public
 
