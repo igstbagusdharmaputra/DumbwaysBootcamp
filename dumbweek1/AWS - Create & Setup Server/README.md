@@ -161,3 +161,16 @@ Membuat user baru pada setiap server karena tidak disarankan menggunakan user de
 ![text](./asset/adduser/2.png)
 
 ## NAT Gateway
+Pada tahap ini bertujuan untuk mentranslasikan network ip private ke ip public sehingga jaringan private dapat melakukan akses internet.
+
+- Pengujian ping google.com pada server Private, tidak dapat melakukan atau tidak menerima respon balik.
+
+![text](./asset/nat-gateway/1.png)
+
+- Membuat nat gateway dengan subnet public yang sudah dibuat.
+
+![text](./asset/nat-gateway/3.png)
+
+- Mengedit route tabel pada subnet private dengan destination 0.0.0.0/0 melalui target nat gateway yang sudah dibuat.
+
+![text](./asset/nat-gateway/4.png)
