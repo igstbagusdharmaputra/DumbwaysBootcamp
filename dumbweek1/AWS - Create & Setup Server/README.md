@@ -53,7 +53,12 @@ Route disini bertujuan untuk menghubungan jaringan yang berbeda yang dimana subn
 
 ![text](./asset/network/13.png)
 
-## Setup Instance Pada Server Public
+## Setup Instance Pada Server Public Untuk Reverse Proxy
+Instance ini bertujuan sebagai perantara untuk aplikasi yang berjalan pada server private, dimana server public ini terdapat reverse proxy untuk aplikasi.
+
+- Memilih OS yang akan digunakan untuk server, dalam hal ini menggunakan ubuntu server 18.0.4
+
+![text](./asset/server-proxy/1.png)
 
 
 
