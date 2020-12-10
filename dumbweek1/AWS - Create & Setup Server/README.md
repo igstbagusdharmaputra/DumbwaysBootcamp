@@ -1,1 +1,8 @@
-# Instalasi Ubuntu Server 18.04 pada VMWare
+# Create & Setup Server
+
+## Konfigurasi Interface
+### test
+## Setup Instance Pada Server Public
+
+## Setup Instance Pada Server Private
+
