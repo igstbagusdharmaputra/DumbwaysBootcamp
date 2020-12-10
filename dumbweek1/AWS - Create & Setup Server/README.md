@@ -117,8 +117,47 @@ Pada Instance atau Server Private ini bertujuan untuk menjalankan aplikasi yang 
 
 ![text](./asset/server-private/4.png)
 
+
 ## SSH Pada Server Public
+Melakukan ssh pada server public dengan menggunakan ssh client pada komputer/laptop.
+
+- Konfigurasi ssh /etc/ssh/sshd_config dengan mengubah PasswordAuthentication no menjadi yes dan restart konfigurasi ssh dengan sudo systemctl restar ssh.
+
+![text](./asset/ssh-ke-server-public-private/5.png)
+
+- Setting pindahkan key-pair kedalam directory ~/.ssh dan berikan permisson 400.
+
+![text](./asset/ssh-ke-server-public-private/6.png)
+
+- Membuat Identitifile pada ~/.ssh/config yang bertujuan mempersingkat penggunaan perintah dalam melakukan remote, dengan cukup mengetikan perintah ssh hostname.
+
+![text](./asset/ssh-ke-server-public-private/7.png)
+
+![text](./asset/ssh-ke-server-public-private/8.png)
+
 
 ## SSH Pada Server Private Melalui Server Public
+Melakukan ssh melalui public server dikarenakan server belum bisa diakses melalui jaringan public, maka dari itu diakses melalui server public
+
+- Membuat file .pem untuk key-pair yang sudah digenerate pada pembuatan instance dan memberikan permisson 400 terhadap file. Konfigurasi ~/ssh/sshd_config dengan  mengubah PasswordAuthentication no menjadi yes dan restart konfigurasi ssh dengan sudo systemctl restar ssh, supaya bisa login dengan user.
+
+![text](./asset/ssh-ke-server-public-private/9.png)
+
+![text](./asset/ssh-ke-server-public-private/10.png)
+
+- Membuat ssh IdentityFile pada public server.
+
+![text](./asset/ssh-ke-server-public-private/11.png)
+
+![text](./asset/ssh-ke-server-public-private/12.png)
+
+## Membuat User di Ubuntu Server Pada Server Public dan Private
+Membuat user baru pada setiap server karena tidak disarankan menggunakan user default seperti ubuntu atau ec2-user dengan alasan keamanan.
+
+- Membuat user pada server public dan private, serta memberikan hak akses sudo dengan usermod.
+
+![text](./asset/adduser/1.png)
+
+![text](./asset/adduser/2.png)
 
 ## NAT Gateway
