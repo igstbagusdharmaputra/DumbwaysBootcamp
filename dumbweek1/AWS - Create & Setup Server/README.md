@@ -174,3 +174,7 @@ Pada tahap ini bertujuan untuk mentranslasikan network ip private ke ip public s
 - Mengedit route tabel pada subnet private dengan destination 0.0.0.0/0 melalui target nat gateway yang sudah dibuat.
 
 ![text](./asset/nat-gateway/4.png)
+
+- Pengujian berhasil dengan melakukan ping google.com
+
+![text](./asset/nat-gateway/5.png)
