@@ -1,21 +1,16 @@
-# SSL CONFIGURATION
+# NGINX VS HAPROXY
 
-- Membuat SSL dengan certbot pada server backend dengan domain `api.dharma.instructype.com` hal yang dilakukan sama seperti pada membuat ssl di frontend.
+- Dalam pengujian menggunakan tool Apache Benchmarking yang dilakukan pada client windows 
 
-![text](asset/1.png)
+![text](./asset/1.png)
 
-![text](asset/2.png)
+- Berikut hasil yang sudah dilakukan ketika melakukan benchmarking pada loadbalancing nginx dan haproxy
 
-- Testing dengan akses url `api.dharma.instructype.com` ke browser untuk mengecek certificate.
+![text](./asset/2.png)
 
-![text](asset/3.png)
+![text](./asset/3.png)
 
-- Ubah url API config/api.js pada masing-masing server frontend untuk integrasi ke server backend atau API.
+- Hasil dengan statistik yang sudah dibuat maka secara keseluruhan Haproxy lebih baik untuk menangani 5000 request
 
-![text](asset/4.png)
+![text](./asset/4.png)
 
-- Test login dengan user yang sudah dibuat pada proses reverse proxy.
-
-![text](asset/5.png)
-
-![text](asset/6.png)
