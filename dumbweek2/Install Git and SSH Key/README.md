@@ -2,7 +2,7 @@
 
 - Fork Repositoy pada project mas sugeng `https://github.com/sgnd/housy-backend` sehingga kita mendapatkan salinan dari repo tesebut tanpa perlu mengcopy secara manual, dengan menggunakan fork kita dapat mengupdate repositori master atau repository yang kita fork.
 
-![text](asset/1.png)
+![text](asset/1.jpg)
 
 ![text](asset/2.png)
 

@@ -6,5 +6,5 @@
 
 - Jika tidak mengubah status proxy maka hasilnya ERR_SSL_VERSION_OR_CHIPER_MISMATCH
 
-![text](./asset/2.png)
+![text](./asset/2.jpg)
 
