@@ -1,0 +1,40 @@
+for i in `seq 1 6`; do mysql -h 192.168.1.254 -u haproxy_root -ppassword -e "show variables like 'server_id'"; done
+
+root@mysql-1# mysql -u root -p -e "GRANT ALL PRIVILEGES ON *.* TO 'haproxy_root'@'10.0.0.100' IDENTIFIED BY 'password' WITH GRANT OPTION; FLUSH PRIVILEGES"
+
+sudo mysql -h 192.168.1.254 -u haproxy_root -ppassword -e "SHOW DATABASES"
+
+sudo mysql -h 192.168.1.254 -u haproxy_root -ppassword -e "show variables like 'server_id'"
+
+sudo mysql -u root -p -e "show status like 'wsrep_%'"
+
+
+$ sudo vim /etc/mongodb.conf
+
+net:
+  port: 27017
+  bindIp: 127.0.0.1,192.168.1.100
+
+replication:
+  replSetName: rs0
+
+
+rs.initiate( {
+  _id : "rs0",
+  members: [
+    { _id: 0, host: "192.168.1.254:27017" },
+    { _id: 1, host: "192.168.1.100:27017" },
+    { _id: 2, host: "192.168.1.101:27017" } 
+  ]
+} )
+rs.slaveOk()
+show dbs
+use testdb
+db.testcollection.insert({"Name" : "Dharma"})
+show collections
+db.testcollection.find()
+
+db.createCollection("example")
+
+
+
