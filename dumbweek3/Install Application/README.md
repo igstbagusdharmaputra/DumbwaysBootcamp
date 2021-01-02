@@ -16,7 +16,7 @@
 
 ![text](./asset/backend/2.png)
 
-## INSTALL APPLICATON MULTISTAGE
+## INSTALL APPLICATON IMAGE MULTISTAGE
 
 - Pada multistage pada frontend dan backend kurang lebih hampir sama dengan tanpa multistage hanya saja yang perlu diperhatikan pada frontend adalah port yang sudah di expose pada dockerfile.
 
