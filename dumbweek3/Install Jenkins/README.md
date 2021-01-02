@@ -14,26 +14,26 @@ Keterangan:
 	- jenkins/jenkins merupakan images dari dockerhub
     - --name untuk memberikan nama container
 
-![text](asset/1.png)
+![text](./asset/jenkins-nonfile/1.png)
 
-![text](asset/2.png)
+![text](./asset/jenkins-nonfile/2.png)
 
 - Pada tahap proses install jenkins perlu memasukan secret password dari jenkins dengan cara masuk ke dalam container aplikasi seperti gambar berikut.
 
-![text](asset/4.png)
+![text](./asset/jenkins-nonfile/4.png)
 
 - Berikut proses installasi jenkins dengan menginstall plugin recommendation.
 
-![text](asset/5.png)
+![text](./asset/jenkins-nonfile/5.png)
 
 
 - Reverse proxy pada jenkins
 
-![text](asset/3.png)
+![text](./asset/jenkins-nonfile/3.png)
 
 - Berikut tampilan dari jenkins 
 
-![text](asset/6.png)
+![text](./asset/jenkins-nonfile/6.png)
 
 
 untuk proses instalasi saya langsung pilih konfigurasi standar dan tambahan install plugin github, slack notification dan publish over ssh
