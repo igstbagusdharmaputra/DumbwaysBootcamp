@@ -8,6 +8,18 @@ sudo mysql -h 192.168.1.254 -u haproxy_root -ppassword -e "show variables like '
 
 sudo mysql -u root -p -e "show status like 'wsrep_%'"
 
+####sudo nano /var/lib/mysql/grastate.dat set bootstrap 1
+
+cd /var/lib/mysql
+ls
+sudo rm -r *
+sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mariadb
+sudo systemctl start mysqld
+sudo systemctl start mysql.service
+sudo systemctl start mariadb
+mysql
+
+
 
 $ sudo vim /etc/mongodb.conf
 
