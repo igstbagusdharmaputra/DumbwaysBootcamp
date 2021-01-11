@@ -62,13 +62,13 @@ NB: ketika sudah membuat user pada masing-masing server maka perlu menghapus rem
 
 - Selanjutnya melakukan generate ssh-key pada server frontend dan backend melalui ansible.
 
-![text](./asset/ssh/1.png)
+![text](./asset/SSH/1.png)
 
-![text](./asset/ssh/2.png)
+![text](./asset/SSH/2.png)
 
-![text](./asset/ssh/3.png)
+![text](./asset/SSH/3.png)
 
-![text](./asset/ssh/4.png)
+![text](./asset/SSH/4.png)
 
 - Melakukan proses clone repository private pada github.
 
