@@ -6,24 +6,24 @@ Databse cluster menggunakan docker sebagai container untuk aplikasi database di 
 
 - Untuk konfigurasi menggunakan docker-compose dan melakukan beberapa setup seperti USERNAME,PASSWORD dan DATABASE pada node database dan untuk node 1 diperlukan inisiasi cluster yang nantinya pada node lain akan join pada cluster tersebut.
 
-![text](./asset/sg/Screenshot_1.png)
+![text](./asset/Screenshot_1.png)
 
 - Melakukan load balancing dengan nginx
 
-![text](./asset/sg/Screenshot_2.png)
+![text](./asset/Screenshot_2.png)
 
-![text](./asset/sg/Screenshot_3.png)
+![text](./asset/Screenshot_3.png)
 
 - Melakukan setup bootstrap pada file yang ada pada /var/lib/mysql dengan tujuan untuk dapat melakukan proses volume pada docker dan setup galera cluster.
 
-![text](./asset/sg/Screenshot_4.png)
+![text](./asset/Screenshot_4.png)
 
-![text](./asset/sg/Screenshot_5.png)
+![text](./asset/Screenshot_5.png)
 
 - Uji coba melakukan docker exec pada salah satu container database.
 
-![text](./asset/sg/Screenshot_6.png)
+![text](./asset/Screenshot_6.png)
 
 - Berikut hasil uji coba ketika database dibuat disalah satu node, maka node lainnya akan tersinkron dengan database yg sudah dibuat.
 
-![text](./asset/sg/Screenshot_7.png)
+![text](./asset/Screenshot_7.png)
