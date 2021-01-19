@@ -20,3 +20,7 @@ https://github.com/igstbagusdharmaputra/Mariadb-Galera-Cluster-Docker
 # Ansible Playbook
 
 https://github.com/igstbagusdharmaputra/Ansible-Playbook
+
+# CI/CD Jenkins Pipeline Script
+
+https://youtu.be/AF-Pp2H-Y4U
